@@ -5,11 +5,9 @@
   "main": "dist/session-id.js",
   "module": "lib/session-id.js",
   "scripts": {
-    "build": "scriptkit build",
-    "dev": "scriptkit dev",
+    "start": "scriptkit",
     "test": "cat test/session-id.test.dist.js | tape-run --browser phantomjs --render tap-spec",
-    "prepublish": "scriptkit",
-    "pretest": "scriptkit"
+    "prepublish": "scriptkit"
   },
   "repository": {
     "type": "git",
