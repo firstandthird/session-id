@@ -1,0 +1,63 @@
+{
+  "name": "session-id",
+  "version": "1.0.0",
+  "description": "Unique Session ID for montly active user tracking.",
+  "main": "dist/session-id.js",
+  "module": "lib/session-id.js",
+  "scripts": {
+    "build": "scriptkit build",
+    "dev": "scriptkit dev",
+    "test": "cat test/session-id.test.dist.js | tape-run --browser phantomjs --render tap-spec",
+    "prepublish": "scriptkit",
+    "pretest": "scriptkit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/firstandthird/session-id.git"
+  },
+  "keywords": [
+    "dom",
+    "browser",
+    "module",
+    "helper"
+  ],
+  "author": "First+Third <code@firstandthird.com> (http://firstandthird.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/firstandthird/session-id/issues"
+  },
+  "homepage": "https://github.com/firstandthird/session-id#readme",
+  "devDependencies": {
+    "eslint-config-firstandthird": "^3.1.0",
+    "eslint-plugin-import": "^2.1.0",
+    "phantomjs": "^2.1.7",
+    "scriptkit": "0.0.22",
+    "static-server": "^2.0.3",
+    "tap-spec": "^4.1.1",
+    "tape-rollup": "4.6.4",
+    "tape-run": "^2.1.5"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true
+    },
+    "extends": "firstandthird",
+    "rules": {
+      "no-underscore-dangle": 0
+    }
+  },
+  "scriptkit": {
+    "scripts": {
+      "commonjs": {
+        "include": "node_modules/**"
+      },
+      "files": {
+        "dist/session-id.js": "lib/session-id.js",
+        "test/session-id.test.dist.js": "test/session-id.test.js"
+      }
+    }
+  },
+  "dependencies": {
+    "@firstandthird/cookie-monster": "github:firstandthird/cookie-monster"
+  }
+}
