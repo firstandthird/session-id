@@ -58,6 +58,6 @@
     }
   },
   "dependencies": {
-    "@firstandthird/cookie-monster": "github:firstandthird/cookie-monster"
+    "@firstandthird/cookie-monster": "2.0.0"
   }
 }
