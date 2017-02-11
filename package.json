@@ -5,8 +5,7 @@
   "main": "dist/session-id.js",
   "module": "lib/session-id.js",
   "scripts": {
-    "build": "scriptkit build",
-    "dev": "scriptkit dev",
+    "start": "scriptkit",
     "test": "cat test/session-id.test.dist.js | tape-run --browser phantomjs --render tap-spec",
     "prepublish": "scriptkit"
   },
@@ -27,14 +26,14 @@
   },
   "homepage": "https://github.com/firstandthird/session-id#readme",
   "devDependencies": {
-    "eslint-config-firstandthird": "^3.2.0",
-    "eslint-plugin-import": "^2.2.0",
+    "eslint-config-firstandthird": "^3.1.0",
+    "eslint-plugin-import": "^2.1.0",
     "phantomjs-prebuilt": "2.1.14",
     "scriptkit": "0.0.22",
-    "static-server": "^2.0.4",
+    "static-server": "^2.0.3",
     "tap-spec": "^4.1.1",
     "tape-rollup": "4.6.4",
-    "tape-run": "^2.2.1"
+    "tape-run": "^2.1.5"
   },
   "eslintConfig": {
     "env": {
@@ -57,6 +56,6 @@
     }
   },
   "dependencies": {
-    "@firstandthird/cookie-monster": "github:firstandthird/cookie-monster"
+    "@firstandthird/cookie-monster": "2.0.0"
   }
 }
